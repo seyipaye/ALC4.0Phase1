@@ -2,6 +2,5 @@
 <resources>
     <color name="colorPrimary">#263ECD</color>
     <color name="colorPrimaryDark">#1C2B8A</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="andela_orange">#F19926</color>
+    <color name="colorAccent">#F19926</color>
 </resources>

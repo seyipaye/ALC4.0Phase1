@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".ProfileActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:scaleType="centerCrop"
-        tools:srcCompat="@drawable/my_pix" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/my_pix" />
 
     <TextView
         android:id="@+id/trackTV2"
@@ -22,8 +28,9 @@
         android:gravity="center"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:text="Ipaye Oluwaseyifunmi"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:text="@string/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp" />
 
     <View
         android:id="@+id/divider"
@@ -34,53 +41,59 @@
         android:layout_weight="0"
         android:background="@color/colorPrimary" />
 
-    <TextView
-        android:id="@+id/trackTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"
-        android:text="Track:    Android"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        <TextView
+            android:id="@+id/trackTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="@string/track"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="22sp" />
 
-    <TextView
-        android:id="@+id/countryTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"
-        android:text="Country:   Nigeria"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        <TextView
+            android:id="@+id/countryTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="@string/country"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="22sp" />
 
-    <TextView
-        android:id="@+id/emailTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"
-        android:text="Email:    Seyipaye@gmail.com"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        <TextView
+            android:id="@+id/emailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="@string/email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="22sp" />
 
-    <TextView
-        android:id="@+id/pNumberTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"
-        android:text="Phone Number:    09011097509"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        <TextView
+            android:id="@+id/pNumberTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="@string/pNumber"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="22sp" />
 
-    <TextView
-        android:id="@+id/usernameTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"
-        android:text="Slack Username:    @seyi"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/usernameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="@string/username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="22sp" />
+    </LinearLayout>
+</ScrollView>

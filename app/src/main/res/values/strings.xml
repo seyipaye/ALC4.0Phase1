@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ALC 4 Phase 1</string>
+    <string name="name">Ipaye Oluwaseyifunmi</string>
+    <string name="track">Track: Android</string>
+    <string name="country">Country: Nigeria</string>
+    <string name="email">Email: Seyipaye@gmail.com</string>
+    <string name="pNumber">Phone Number: 09011097509</string>
+    <string name="username">Slack Username: @seyi</string>
+    <string name="about_alc">About ALC</string>
+    <string name="my_profile">My Profile</string>
 </resources>
